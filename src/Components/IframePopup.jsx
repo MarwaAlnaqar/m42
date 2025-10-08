@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom';
 
 export default function IframePopup({ show, onClose, data }) {
   if (!data) return null;
-
+  const closeItem = {
+    name: 'Close',
+    icon: `close.png`,
+    redirectPageName: ''
+  };
   const renderPopUpContent = () => {
     switch (data.type) {
       case 'video':
@@ -11,8 +15,8 @@ export default function IframePopup({ show, onClose, data }) {
           <iframe
             src={data.link}
             width="100%"
-            style={{ aspectRatio: '16/9', minHeight: '70vh' }}
-            frameBorder="0"
+            style={{ aspectRatio: '16/9', minHeight: '845px' }}
+           
             allow="autoplay; fullscreen"
             allowFullScreen
             title="video-popup"
@@ -49,7 +53,19 @@ export default function IframePopup({ show, onClose, data }) {
         onClick={(e) => e.stopPropagation()}
       >
         {renderPopUpContent()}
-      </div>
+         
+        </div>
+           <div className="close-button">
+               <div
+              
+                  onClick={() => setPopupData(null)}
+                  className="button-option"
+                >
+                  <div className="button-title">{closeItem.name}</div>
+                            <img className="button_icon_close" src={`${import.meta.env.BASE_URL}assets/r42/${closeItem.icon}`} alt={closeItem.name} />
+
+                  </div>
+              </div>
     </div>
   );
 }

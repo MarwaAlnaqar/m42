@@ -98,18 +98,7 @@ const CtlAiPage = () => {
             onClose={() => setPopupData(null)}
             data={popupData} // ✅ correct prop
           />
-          <div className="close-button">
-            {/* <OptionBox option={closeItem} onClick={() => setPopupData(null)} /> */}
-               <div
-              
-              onClick={() => setPopupData(null)}
-              className="button-option"
-            >
-              <div className="button-title">{closeItem.name}</div>
-                        <img className="button_icon_close" src={`${import.meta.env.BASE_URL}assets/r42/${closeItem.icon}`} alt={closeItem.name} />
-
-            </div>
-          </div>
+      
         </div>
       )}
     </VideoBackground>

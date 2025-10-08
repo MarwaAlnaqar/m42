@@ -178,10 +178,12 @@ cursor: pointer
 .custom-popup {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+   background-color:#0E202BE5;
   display: none;
   justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   z-index: 9999;
 }
 
@@ -193,11 +195,12 @@ cursor: pointer
 .popup-content {
   position: absolute;
   width: 1502px;
-  /* height: 645px;
-  592px */
-  height: 592px;
-  top: 98px;
-  left: 209px;
+  
+  height: 80vh;
+  top: 7vh;
+  /* height: 845px; */
+  /* top: 98px;
+  left: 209px; */
   transform: rotate(0deg);
   opacity: 1;
   background-color: #fff;
