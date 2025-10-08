@@ -3,14 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marwaalnaqar.github.io/m42/",
+ 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+        "predeploy": "npm run build",
      "deploy": "gh-pages -d dist"
   },
+   "homepage": "https://marwaalnaqar.github.io/m42/",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "react": "^19.1.1",
