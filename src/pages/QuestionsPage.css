@@ -228,19 +228,20 @@ cursor: pointer
 } */
 
 /* QuestionsPage.css */
-.option-box { 
+.option-box ,.button-option { 
   transition: transform 150ms ease, box-shadow 150ms ease;
-  display: block;
+  /* display: block; */
 }
 
 .option-box:hover,
-.option-box:focus-visible {           /* keyboard-friendly */
+.option-box:focus-visible ,.button-option:hover,
+.button-option:focus-visible {           /* keyboard-friendly */
   transform: translateY(-6px) scale(.98);
   box-shadow: 0 8px 18px rgba(0,0,0,.12);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .option-box { transition: none; }
+  .option-box ,.button-option{ transition: none; }
 }
 
 .hover-lift { transition: transform 150ms ease, box-shadow 150ms ease; }

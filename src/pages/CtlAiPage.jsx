@@ -23,12 +23,12 @@ const CtlAiPage = () => {
   };
 
   const buttonItemList = [
-    {
-      name: 'Video',
-      type: 'video',
-      icon: `video.png`,
-      link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
-    },
+    // {
+    //   name: 'Video',
+    //   type: 'video',
+    //   icon: `video.png`,
+    //   link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
+    // },
     {
       name: 'Web Demo',
       type: 'webDemo',

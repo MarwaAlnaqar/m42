@@ -4,6 +4,7 @@ import OptionButton from '../Components/OptionButton';
 import VideoBackground from '../Components/VideoBackground';
 
 const Home = () => {
+  console.log(import.meta.env.BASE_URL)
   const buttonItemList = [
     {
       name: 'rasids_surveillance_platform',
