@@ -27,7 +27,7 @@
 .option-box{
   width: 413px;
 height: 377px;
-
+cursor: 'pointer'
 
 }
 .box-container{
@@ -72,7 +72,7 @@ height: 377px;
 .video-bg__content {
   position: relative;   /* ensure content stacks above */
   z-index: 0;
-  padding-top: 5rem;
+  padding-top: 10rem;
   height: 80vh;/* ensure content stacks correctly in other page */
 }
 
@@ -95,13 +95,25 @@ height: 377px;
 }
 .page_Title{
 color: #fff;
-font-family: 'Graphik';
+font-family: 'Graphik-Bold';
 font-weight: 700;
 font-style: normal;
 font-size: 60px;
 
 line-height: 40px;
 letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+    margin-bottom: 1.5rem;
+}
+.page_subtitle{
+  font-family: Graphik;
+font-weight: 400;
+font-style: normal;
+font-size: 32px;
+color: #fff;
+line-height: 32px;
+letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
 
@@ -112,8 +124,12 @@ height:  50px;
 
 
 }
+button_icon_close{
+   width: 26px;
+height:  26px;
+}
 .button-title{
-  font-family: 'Graphik';
+  /* font-family: 'Graphik'; */
 font-weight: 700;
 font-weight: Bold;
 font-size: 26px;
@@ -122,7 +138,7 @@ letter-spacing: 0px;
 text-align: center;
 vertical-align: middle;
 color: #fff;
-
+padding-bottom: 10px;
 
 }
 .button-option{
@@ -138,7 +154,7 @@ display: flex;
 justify-content: space-evenly;
 align-items: center;
 align-content: center;
-
+cursor: 'pointer'
 }
 .back-button{
   width: 100%;
@@ -149,6 +165,7 @@ align-content: center;
   align-items: center;
   align-content: center;
   margin-top: 5rem;
+  cursor: 'pointer'
 }
 .content-container{
   display: flex;
@@ -174,7 +191,9 @@ align-content: center;
 .popup-content {
   position: absolute;
   width: 1502px;
-  height: 645px;
+  /* height: 645px;
+  592px */
+  height: 592px;
   top: 98px;
   left: 209px;
   transform: rotate(0deg);
@@ -196,20 +215,9 @@ align-content: center;
   justify-content: center;
   align-items: center;
   align-content: center;
-
+  cursor: 'pointer'
 }
-.page_subtitle{
-  font-family: Graphik;
-font-weight: 400;
-font-style: Regular;
-font-size: 32px;
 
-line-height: 32px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-
-}
 /* .close-button img {
   width: 50px;
   height: 50px;

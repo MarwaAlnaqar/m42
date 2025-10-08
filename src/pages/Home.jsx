@@ -7,25 +7,25 @@ const Home = () => {
   const buttonItemList = [
     {
       name: 'rasids_surveillance_platform',
-      src: '/assets/r42/rasids_surveillance_platform.svg',
-      redirectPageName: '',
+      src: 'rasids_surveillance_platform.svg',
+      redirectPageName: "/rasids/",
     },
     {
       name: 'ctl_ai',
-      src: '/assets/r42/ctl_ai.svg',
-      redirectPageName: '',
+      src: 'ctl_ai.svg',
+      redirectPageName: "/ctl_ai/",
     },
     {
       name: 'one_health',
-      src: '/assets/r42/one_health.svg',
-      redirectPageName: '',
+      src: 'one_health.svg',
+      redirectPageName: "/one_health/",
     },
   ];
-
+    
   return (
     <VideoBackground className="home-container country-container">
       <div className="logo flex-center">
-        <img src="/assets/r42/logo.svg" alt="logo" />
+        <img  src={`${import.meta.env.BASE_URL}/assets/r42/logo.svg`} alt="logo" />
       </div>
 
       {/* Navbar */}

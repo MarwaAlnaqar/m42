@@ -13,11 +13,11 @@ export default function VideoBackground({ children }) {
           muted
           playsInline
           preload="metadata"
-          poster="/images/hero-poster.jpg"
+          // poster="/images/hero-poster.jpg"
         >
           {/* Prefer webm (smaller) with mp4 fallback */}
-          <source src={`../../public/assets/r42/bgVideo.mp4`} type="video/webm" />
-          <source src={`../../public/assets/r42/bgVideo.mp4`} type="video/mp4" />
+          <source  src={`${import.meta.env.BASE_URL}/assets/r42/bgVideo.mp4`}  type="video/webm" />
+          <source  src={`${import.meta.env.BASE_URL}/assets/r42/bgVideo.mp4`}  type="video/mp4" />
         </video>
 
         {/* Optional dark overlay to improve text contrast */}

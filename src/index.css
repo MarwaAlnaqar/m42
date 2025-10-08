@@ -66,9 +66,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+ @font-face {
+  font-family: 'Graphik';
+  src: url('/assets/fonts/Graphik-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ @font-face {
+  font-family: 'Graphik-Bold';
+  src: url('/assets/fonts/Graphik-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   display: flex;
+  font-family: 'Graphik-Bold';
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
