@@ -7,7 +7,7 @@ export default function  OptionBox  ({ option,IsBack=false  }) {
   console.log('option box')
   console.log(option.icon)
 
-  console.log(`${import.meta.env.BASE_URL}assets/r42/${option.icon}`)
+  console.log(`${import.meta.env.BASE_URL}assets/m42/${option.icon}`)
   const setShowPopup=(location)=>{
 
 
@@ -16,12 +16,12 @@ export default function  OptionBox  ({ option,IsBack=false  }) {
   return (!IsBack?(<div onClick={setShowPopup(option.redirectPageName)} className="button-option"    
 >
   <div className="button-title">{option.name}</div>
-  <img className="button_icon"src={`${import.meta.env.BASE_URL}assets/r42/${option.icon}`}/>
+  <img className="button_icon"src={`${import.meta.env.BASE_URL}assets/m42/${option.icon}`}/>
 
    
     </div>):(<div    onClick={() => navigate(-1)} className="button-option"    
 >
-  <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/r42/${option.icon}`}/>
+  <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${option.icon}`}/>
   <div className="button-title">{option.name}</div>
 
    

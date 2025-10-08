@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <VideoBackground className="home-container country-container">
       <div className="logo flex-center">
-        <img  src={`${import.meta.env.BASE_URL}/assets/r42/logo.svg`} alt="logo" />
+        <img  src={`${import.meta.env.BASE_URL}/assets/m42/logo.svg`} alt="logo" />
       </div>
 
       {/* Navbar */}

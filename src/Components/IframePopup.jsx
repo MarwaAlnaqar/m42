@@ -62,7 +62,7 @@ export default function IframePopup({ show, onClose, data }) {
                   className="button-option"
                 >
                   <div className="button-title">{closeItem.name}</div>
-                            <img className="button_icon_close" src={`${import.meta.env.BASE_URL}assets/r42/${closeItem.icon}`} alt={closeItem.name} />
+                            <img className="button_icon_close" src={`${import.meta.env.BASE_URL}assets/m42/${closeItem.icon}`} alt={closeItem.name} />
 
                   </div>
               </div>

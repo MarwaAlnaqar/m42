@@ -63,7 +63,7 @@ cursor: pointer
   width:100%;
   position: absolute;
   inset: 0;color: #000;
-  background: url('../../public/assets/r42/shad2.svg');
+  background: url('../../public/assets/m42/shad2.svg');
   background-repeat: no-repeat;
   background-size: cover;
  /* background: linear-gradient(360deg, rgba(14, 33, 44, 0) 0%, rgba(14, 33, 44, 0.95) 79.33%, #0E212C 100%); */
@@ -80,7 +80,7 @@ cursor: pointer
 @media (prefers-reduced-motion: reduce) {
   .video-bg__media { display: none; }
   .video-bg {
- background: url('../../public/assets/r42/shad2.svg');
+ background: url('../../public/assets/m42/shad2.svg');
   }
 }
 

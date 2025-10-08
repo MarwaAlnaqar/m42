@@ -52,7 +52,7 @@ const CtlAiPage = () => {
     <VideoBackground className="RasidsPage-container country-container">
       {/* Logo */}
       <div className="logo flex-center">
-       <img  src={`${import.meta.env.BASE_URL}/assets/r42/logo.svg`} alt="logo" />
+       <img  src={`${import.meta.env.BASE_URL}/assets/m42/logo.svg`} alt="logo" />
       </div>
 
       {/* Page title */}
@@ -70,7 +70,7 @@ const CtlAiPage = () => {
               onClick={() => handleOpenPopup(item)}
               className="button-option"
             >
-              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/r42/${item.icon}`} alt={item.name} />
+              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${item.icon}`} alt={item.name} />
               <div className="button-title">{item.name}</div>
             </div>
           ))}
@@ -86,7 +86,7 @@ const CtlAiPage = () => {
               className="button-option"
             >
               <div className="button-title">{backItem.name}</div>
-              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/r42/${backItem.icon}`} alt={backItem.name} />
+              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${backItem.icon}`} alt={backItem.name} />
             </div>
       </div>
 
