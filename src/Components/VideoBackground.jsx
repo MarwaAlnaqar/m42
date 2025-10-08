@@ -2,6 +2,7 @@
 import React from 'react';
 
 export default function VideoBackground({ children }) {
+  
   return (
     <>
       {/* Background video */}
@@ -16,8 +17,8 @@ export default function VideoBackground({ children }) {
           // poster="/images/hero-poster.jpg"
         >
           {/* Prefer webm (smaller) with mp4 fallback */}
-          <source  src={`${import.meta.env.BASE_URL}assets/m42/bgVideo.mp4`}  type="video/webm" />
-          <source  src={`${import.meta.env.BASE_URL}assets/m42/bgVideo.mp4`}  type="video/mp4" />
+          <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4" type="video/mp4" />
+          <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4"  type="video/mp4" />
         </video>
 
         {/* Optional dark overlay to improve text contrast */}

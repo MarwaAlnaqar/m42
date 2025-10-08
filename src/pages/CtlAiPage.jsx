@@ -50,7 +50,9 @@ const CtlAiPage = () => {
 
   return (
     <VideoBackground className="RasidsPage-container country-container">
-      {/* Logo */}
+       <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
+      <div>
+ {/* Logo */}
       <div className="logo flex-center">
        <img  src={`${import.meta.env.BASE_URL}assets/m42/logo.svg`} alt="logo" />
       </div>
@@ -76,7 +78,7 @@ const CtlAiPage = () => {
           ))}
         </div>
       </div>
-
+      </div>
       {/* Back button */}
       <div className="back-button">
         {/* <OptionBox option={backItem} IsBack={true} /> */}
@@ -90,6 +92,10 @@ const CtlAiPage = () => {
             </div>
       </div>
 
+
+     </div>
+
+    
       {/* Popup */}
       {popupData && (
         <div className="popup-overlay">

@@ -51,6 +51,8 @@ const RasidsPage = () => {
 
   return (
     <VideoBackground className="RasidsPage-container country-container">
+         <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
+      <div>
       {/* Logo */}
       <div className="logo flex-center">
        <img  src={`${import.meta.env.BASE_URL}assets/m42/logo.svg`} alt="logo" />
@@ -76,7 +78,7 @@ const RasidsPage = () => {
           ))}
         </div>
       </div>
-
+</div>
        {/* Back button */}
       <div className="back-button">
         {/* <OptionBox option={backItem} IsBack={true} /> */}
@@ -89,7 +91,7 @@ const RasidsPage = () => {
               <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${backItem.icon}`} alt={backItem.name} />
             </div>
       </div>
-
+</div>
       {/* Popup */}
      {popupData && (
              <div className="popup-overlay">

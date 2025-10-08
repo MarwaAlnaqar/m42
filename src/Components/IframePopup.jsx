@@ -15,7 +15,7 @@ export default function IframePopup({ show, onClose, data }) {
           <iframe
             src={data.link}
             width="100%"
-            style={{ aspectRatio: '16/9', minHeight: '845px' }}
+            style={{ aspectRatio: '16/9', minHeight: '100%' }}
            
             allow="autoplay; fullscreen"
             allowFullScreen
