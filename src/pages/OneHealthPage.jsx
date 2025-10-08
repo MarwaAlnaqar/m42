@@ -56,7 +56,7 @@ const OneHealthPage = () => {
     <VideoBackground className="RasidsPage-container country-container">
       {/* Logo */}
       <div className="logo flex-center">
-       <img  src={`${import.meta.env.BASE_URL}/assets/m42/logo.svg`} alt="logo" />
+       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo.svg`} alt="logo" />
       </div>
 
       {/* Page title */}
