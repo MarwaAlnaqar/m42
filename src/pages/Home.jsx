@@ -7,20 +7,16 @@ const Home = () => {
   console.log(import.meta.env.BASE_URL)
   const buttonItemList = [
     {
-      name: 'rasids_surveillance_platform',
-      src: 'rasids_surveillance_platform.svg',
-      redirectPageName: "/rasids/",
+      name: 'hall6',
+      src: 'hall6.svg',
+      redirectPageName: "/home6/",
     },
     {
-      name: 'ctl_ai',
-      src: 'ctl_ai.svg',
-      redirectPageName: "/ctl_ai/",
+      name: 'hall18',
+      src: 'hall18.svg',
+      redirectPageName: "/home18/",
     },
-    {
-      name: 'one_health',
-      src: 'one_health.svg',
-      redirectPageName: "/one_health/",
-    },
+    
   ];
     
   return (
