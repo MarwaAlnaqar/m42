@@ -21,7 +21,7 @@
 .logo img {
   max-width: 100%;
   height: auto;
-  width: 450px; 
+  /* width: 450px;  */
 }
 
 .option-box{
@@ -230,7 +230,7 @@ cursor: pointer
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 } */
 
-/* QuestionsPage.css */
+/* style.css */
 .option-box ,.button-option { 
   transition: transform 150ms ease, box-shadow 150ms ease;
   /* display: block; */

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './QuestionsPage.css';
+import './style.css';
 import OptionBox from '../Components/OptionBox';
 import VideoBackground from '../Components/VideoBackground';
 import IframePopup from '../Components/IframePopup';
 import { useNavigate } from 'react-router-dom';
-const CtlAiPage = () => {
+const CtlAiPage18 = () => {
   const [popupData, setPopupData] = useState(null);
  const navigate = useNavigate();
 
@@ -111,4 +111,4 @@ const CtlAiPage = () => {
   );
 };
 
-export default CtlAiPage;
+export default CtlAiPage18;

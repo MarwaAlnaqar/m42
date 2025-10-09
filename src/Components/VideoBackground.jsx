@@ -1,13 +1,13 @@
 // src/components/VideoBackground.jsx
 import React from 'react';
 
-export default function VideoBackground({ children }) {
+export default function VideoBackground({ children,isVideo=true,bgFullLink }) {
   
   return (
     <>
       {/* Background video */}
       <div className="video-bg" aria-hidden="true">
-        <video
+        {isVideo? ( <video
           className="video-bg__media"
           autoPlay
           loop
@@ -19,7 +19,8 @@ export default function VideoBackground({ children }) {
           {/* Prefer webm (smaller) with mp4 fallback */}
           <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4" type="video/mp4" />
           <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4"  type="video/mp4" />
-        </video>
+        </video>):(<div className="video-bg__media" style={{backgroundImage: `url(${bgFullLink})`}}></div>)}
+       
 
         {/* Optional dark overlay to improve text contrast */}
         <div className="video-bg__overlay" style={{backgroundImage:'../../public/assets/m42/shadow.svg'}} />
@@ -29,8 +30,8 @@ export default function VideoBackground({ children }) {
       <div className="video-bg__content">
         {children ?? (
           <div className="hero">
-            <h1>Your Headline</h1>
-            <p>Tagline goes here.</p>
+            {/* <h1>Your Headline</h1>
+            <p>Tagline goes here.</p> */}
           </div>
         )}
       </div>

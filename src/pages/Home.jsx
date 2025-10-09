@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuestionsPage.css';
+import './style.css';
 import OptionButton from '../Components/OptionButton';
 import VideoBackground from '../Components/VideoBackground';
 

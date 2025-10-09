@@ -5,7 +5,7 @@
 
 
 import React, { useState } from 'react';
-import './QuestionsPage.css';
+import './style.css';
 import OptionBox from '../Components/OptionBox';
 import VideoBackground from '../Components/VideoBackground';
 import IframePopup from '../Components/IframePopup';

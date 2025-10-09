@@ -1,6 +1,6 @@
 import React from "react";
 // import './QuestionsItemstyle.css';
-import '../pages/QuestionsPage.css';
+import '../pages/style.css';
 import { useNavigate } from 'react-router-dom';
 export default function  OptionBox  ({ option,IsBack=false  }) {
    const navigate = useNavigate();
