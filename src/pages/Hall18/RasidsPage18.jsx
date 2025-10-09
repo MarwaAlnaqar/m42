@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 import OptionBox from '../../Components/OptionBox';
-import VideoBackground from '../../Components/VideoBackground';
+import ImageBg from '../../Components/ImageBg';
 import IframePopup from '../../Components/IframePopup';
 import { useNavigate } from 'react-router-dom';
 const RasidsPage18 = () => {
@@ -17,7 +17,7 @@ const RasidsPage18 = () => {
     icon: `back.png`,
     redirectPageName: ''
   };
-
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
   const closeItem = {
     name: 'Close',
     icon: `close.png`,
@@ -51,7 +51,8 @@ const RasidsPage18 = () => {
   };
 
   return (
-    <VideoBackground className="RasidsPage-container country-container">
+    // <VideoBackground className="RasidsPage-container country-container">
+              <ImageBg className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
       <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
         <div >
             {/* Logo */}
@@ -104,7 +105,7 @@ const RasidsPage18 = () => {
            
              </div>
            )}
-    </VideoBackground>
+    </ImageBg>
   );
 };
 

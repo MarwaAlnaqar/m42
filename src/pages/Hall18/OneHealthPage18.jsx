@@ -7,7 +7,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 import OptionBox from '../../Components/OptionBox';
-import VideoBackground from '../../Components/VideoBackground';
+import ImageBg from '../../Components/ImageBg';
 import IframePopup from '../../Components/IframePopup';
 import { useNavigate } from 'react-router-dom';
 const OneHealthPage18 = () => {
@@ -25,7 +25,7 @@ const OneHealthPage18 = () => {
     redirectPageName: ''
   };
 
-
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/one_health6.svg`;
   const buttonItemList = [
     // {
     //   name: 'Video',
@@ -53,7 +53,8 @@ const OneHealthPage18 = () => {
   };
 
   return (
-    <VideoBackground className="RasidsPage-container country-container">
+    // <VideoBackground className="RasidsPage-container country-container">
+          <ImageBg className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
           <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
       <div>
       {/* Logo */}
@@ -107,7 +108,7 @@ const OneHealthPage18 = () => {
            
              </div>
            )}
-    </VideoBackground>
+    </ImageBg>
   );
 };
 

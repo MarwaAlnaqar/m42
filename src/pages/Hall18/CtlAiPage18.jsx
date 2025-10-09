@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 import OptionBox from '../../Components/OptionBox';
-import VideoBackground from '../../Components/VideoBackground';
+import ImageBg from'../../Components/ImageBg';
 import IframePopup from '../../Components/IframePopup';
 import { useNavigate } from 'react-router-dom';
 const CtlAiPage18 = () => {
@@ -21,7 +21,7 @@ const CtlAiPage18 = () => {
     icon: `close.png`,
     redirectPageName: ''
   };
-
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_ai6.svg`;
   const buttonItemList = [
     // {
     //   name: 'Video',
@@ -49,7 +49,9 @@ const CtlAiPage18 = () => {
   };
 
   return (
-    <VideoBackground className="RasidsPage-container country-container">
+    // <VideoBackground className="RasidsPage-container country-container">
+      <ImageBg className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
+      
        <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
       <div>
  {/* Logo */}
@@ -107,7 +109,7 @@ const CtlAiPage18 = () => {
       
         </div>
       )}
-    </VideoBackground>
+    </ImageBg>
   );
 };
 
