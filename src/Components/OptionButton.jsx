@@ -10,8 +10,9 @@ export default function OptionButton({ option ,length }) {
     navigate(path);
   };
 const colNumber=12/length;
+const colSmall=24/length;
   return (
-  <div  className={`col-md-${colNumber} d-flex justify-content-center`}>
+  <div  className={`col-md-${colNumber} col-sm-${colSmall} d-flex flex-wrap justify-content-center`}>
       <img  src={`${import.meta.env.BASE_URL}assets/m42/${option.src}`}
        
         alt={option.name}

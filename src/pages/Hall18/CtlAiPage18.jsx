@@ -33,13 +33,13 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://www.google.com'
+      link: 'https://uat-platform.centraltestinglab.ae/home'
     },
-    {
+     {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: ''
+      link: 'ctl_Info.jpg'
     }
   ];
 

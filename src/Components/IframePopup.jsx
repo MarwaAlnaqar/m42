@@ -24,7 +24,7 @@ export default function IframePopup({ show, onClose, data }) {
 
       case 'webDemo':
         // Render inside iframe instead of opening new tab
-          window.open('https://www.google.com', '_blank');
+          window.open(data.link, '_blank');
           setTimeout(() => {
         onClose(); // ✅ Close popup right after opening new tab
       }, 300);

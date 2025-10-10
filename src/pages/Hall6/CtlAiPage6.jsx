@@ -30,11 +30,12 @@ const CtlAiPage6 = () => {
     //   icon: `video.png`,
     //   link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
     // },
+    
     {
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://www.google.com'
+      link: 'https://uat-platform.centraltestinglab.ae/home'
     },
       {
       name: 'More Info',

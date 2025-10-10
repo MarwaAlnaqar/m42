@@ -19,7 +19,7 @@ export default function VideoBackground({ children,isVideo=true,bgFullLink }) {
           {/* Prefer webm (smaller) with mp4 fallback */}
           <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4" type="video/mp4" />
           <source  src="https://video-files.castr.net/vd22af3cd0a43f11f08003/R0rXywvyCfsOB7Pa.mp4"  type="video/mp4" />
-        </video>):(<div className="video-bg__media" style={{backgroundImage: `url(${bgFullLink})`}}></div>)}
+        </video>):(<div className="video-bg__media" style={{backgroundImage: `url(${bgFullLink})`,backgroundSize: 'cover'}}></div>)}
        
 
         {/* Optional dark overlay to improve text contrast */}
