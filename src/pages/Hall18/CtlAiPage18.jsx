@@ -21,7 +21,7 @@ const CtlAiPage18 = () => {
     icon: `close.png`,
     redirectPageName: ''
   };
-const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_ai6.svg`;
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
   const buttonItemList = [
     // {
     //   name: 'Video',

@@ -48,7 +48,7 @@ const CtlAiPage6 = () => {
     console.log('Clicked item:', item);
     setPopupData(item);
   };
-const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_ai6.svg`;
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
   return (
     <VideoBackground className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
        <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
@@ -61,8 +61,8 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_ai6.svg`;
       {/* Page title */}
       <div className="content-container">
         <div >
-          <h3 className="page_Title">CTL AI</h3>
-          <h3 className='page_subtitle'>(Central Testing Lab AI)</h3>
+          <h3 className="page_Title">Asterisk</h3>
+          {/* <h3 className='page_subtitle'>(Central Testing Lab AI)</h3> */}
         </div>
 
         {/* Buttons */}

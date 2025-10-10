@@ -2,7 +2,8 @@ import React from 'react';
 import './style.css';
 import OptionButton from '../Components/OptionButton';
 import VideoBackground from '../Components/VideoBackground';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 const Home = () => {
   console.log(import.meta.env.BASE_URL)
   const buttonItemList = [
@@ -26,9 +27,9 @@ const Home = () => {
       </div>
 
       {/* Navbar */}
-      <div className="box-container">
+<div className="row g-4 mt-auto mb-4">
         {buttonItemList.map((item, index) => (
-          <OptionButton key={index} option={item} />
+          <OptionButton  length={buttonItemList.length} key={index} option={item} />
         ))}
       </div>
     </VideoBackground>

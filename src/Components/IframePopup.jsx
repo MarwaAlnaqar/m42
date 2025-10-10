@@ -12,15 +12,14 @@ export default function IframePopup({ show, onClose, data }) {
     switch (data.type) {
       case 'video':
         return (
-          <iframe
-            src={data.link}
-            width="100%"
-            style={{ aspectRatio: '16/9', minHeight: '100%' }}
-           
-            allow="autoplay; fullscreen"
-            allowFullScreen
-            title="video-popup"
-          ></iframe>
+
+<iframe
+   src={data.link}
+  referrerPolicy="strict-origin-when-cross-origin"
+  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+  style={{ width: '100%', aspectRatio: '16/9', border: 'none' }}
+  title="video"
+/>
         );
 
       case 'webDemo':

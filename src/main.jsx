@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // Optional JS (needed for dropdowns, modals, tooltips, etc.)
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import "bootstrap/dist/css/bootstrap.min.css"
 import './index.css'
 import App from './App.jsx'
 // import 'bootstrap/dist/css/bootstrap.min.css';

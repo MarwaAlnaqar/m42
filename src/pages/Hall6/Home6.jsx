@@ -3,7 +3,8 @@ import React from 'react';
 import '../style.css';
 import OptionButton from '../../Components/OptionButton';
 import VideoBackground from '../../Components/VideoBackground';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap';
 const Home6 = () => {
   console.log(import.meta.env.BASE_URL)
   const buttonItemList = [
@@ -22,18 +23,24 @@ const Home6 = () => {
       src: 'one_health.svg',
       redirectPageName: "/one_health6/",
     },
+     {
+      name: 'global',
+      src: 'global.svg',
+      redirectPageName: "/global6/",
+    },
+    
   ];
     
   return (
-    <VideoBackground className="home-container country-container">
+    <VideoBackground className="home-container country-container ">
       <div className="logo flex-center">
         <img  src={`${import.meta.env.BASE_URL}assets/m42/logo.svg`} alt="logo" />
       </div>
 
       {/* Navbar */}
-      <div className="box-container">
+<div className="row g-4 mt-auto mb-4">
         {buttonItemList.map((item, index) => (
-          <OptionButton key={index} option={item} />
+          <OptionButton  length={buttonItemList.length} key={index} option={item} />
         ))}
       </div>
     </VideoBackground>
@@ -41,3 +48,4 @@ const Home6 = () => {
 };
 
 export default Home6;
+
