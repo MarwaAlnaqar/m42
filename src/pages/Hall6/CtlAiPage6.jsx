@@ -36,11 +36,11 @@ const CtlAiPage6 = () => {
       icon: `web_demo.png`,
       link: 'https://www.google.com'
     },
-    {
+      {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: ''
+      link: 'ctl_Info.jpg'
     }
   ];
 

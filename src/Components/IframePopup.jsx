@@ -32,8 +32,9 @@ export default function IframePopup({ show, onClose, data }) {
       case 'info':
         return (
           <div className="info-popup">
-            <h3>Information</h3>
-            <p>Details related to {data.name}</p>
+            <img  style={{ aspectRatio: '16/9' }}  width='100%' src={`${import.meta.env.BASE_URL}assets/m42/${data.link}`} alt={data.name} />
+            {/* <h3>Information</h3>
+            <p>Details related to {data.name}</p> */}
           </div>
         );
 

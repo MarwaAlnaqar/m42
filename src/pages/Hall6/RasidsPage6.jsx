@@ -45,7 +45,7 @@ const RasidsPage6 = () => {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: ''
+      link: 'RASID_Info.jpg'
     }
   ];
 const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
