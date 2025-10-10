@@ -211,7 +211,7 @@ cursor: pointer
 }
 .close-button {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   right: 0px;
   z-index: 10000;
   width: 100%;
