@@ -33,12 +33,12 @@ const OneHealthPage6 = () => {
     //   icon: `video.png`,
     //   link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
     // },
-    {
-      name: 'Web Demo',
-      type: 'webDemo',
-      icon: `web_demo.png`,
-      link: 'https://www.google.com'
-    },
+    // {
+    //   name: 'Web Demo',
+    //   type: 'webDemo',
+    //   icon: `web_demo.png`,
+    //   link: 'https://www.google.com'
+    // },
     {
       name: 'More Info',
       type: 'info',
