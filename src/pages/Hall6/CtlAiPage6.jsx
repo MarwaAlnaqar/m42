@@ -41,7 +41,7 @@ const CtlAiPage6 = () => {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: 'ctl_Info.jpg'
+  link: 'ctl_Info.svg'
     }
   ];
 

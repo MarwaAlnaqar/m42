@@ -35,11 +35,11 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
       icon: `web_demo.png`,
       link: 'https://uat-platform.centraltestinglab.ae/home'
     },
-     {
+       {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: 'ctl_Info.jpg'
+  link: 'ctl_Info.svg'
     }
   ];
 
@@ -56,7 +56,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
       <div>
  {/* Logo */}
       <div className="logo flex-center">
-       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo18.svg`} alt="logo" />
+       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo182.svg`} alt="logo" />
       </div>
 
       {/* Page title */}

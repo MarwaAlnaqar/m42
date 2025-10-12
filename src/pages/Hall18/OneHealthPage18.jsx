@@ -39,11 +39,11 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/one_health6.svg`;
       icon: `web_demo.png`,
       link: 'https://www.google.com'
     },
-    {
+  {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: ''
+      link: 'One_Health_Info.png'
     }
   ];
 
@@ -59,7 +59,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/one_health6.svg`;
       <div>
       {/* Logo */}
       <div className="logo flex-center">
-       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo18.svg`} alt="logo" />
+       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo182.svg`} alt="logo" />
       </div>
 
       {/* Page title */}

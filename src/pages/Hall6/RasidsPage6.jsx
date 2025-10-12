@@ -39,7 +39,7 @@ const RasidsPage6 = () => {
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://www.google.com'
+      link: 'https://dev-wastewateranalytics.envosense.ai/RASID/home'
     },
     {
       name: 'More Info',

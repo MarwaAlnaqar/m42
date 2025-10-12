@@ -35,7 +35,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://www.google.com'
+      link: 'https://dev-wastewateranalytics.envosense.ai/RASID/home'
     },
     {
       name: 'More Info',
@@ -57,7 +57,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
         <div >
             {/* Logo */}
             <div className="logo flex-center">
-            <img  src={`${import.meta.env.BASE_URL}assets/m42/logo18.svg`} alt="logo" />
+            <img  src={`${import.meta.env.BASE_URL}assets/m42/logo182.svg`} alt="logo" />
             </div>
 
             {/* Page title */}

@@ -43,7 +43,7 @@ const OneHealthPage6 = () => {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-      link: ''
+      link: 'One_Health_Info.png'
     }
   ];
 const bgLink=`${import.meta.env.BASE_URL}assets/m42/one_health6.svg`;
