@@ -31,8 +31,8 @@ export default function IframePopup({ show, onClose, data }) {
       return null; // stop rendering anything here
       case 'info':
         return (
-          <div className="info-popup">
-            <img  style={{ aspectRatio: '16/9' }}  width='100%' src={`${import.meta.env.BASE_URL}assets/m42/${data.link}`} alt={data.name} />
+          <div className="info-popup h-100">
+            <img  style={{ aspectRatio: '16/9' }} className='h-100'  width='100%' src={`${import.meta.env.BASE_URL}assets/m42/${data.link}`} alt={data.name} />
             {/* <h3>Information</h3>
             <p>Details related to {data.name}</p> */}
           </div>
