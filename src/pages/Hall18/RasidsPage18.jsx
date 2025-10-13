@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const RasidsPage18 = () => {
   const [popupData, setPopupData] = useState(null);
  const navigate = useNavigate();
- const pageTitle='RASID Surveillance Platform';
+ const pageTitle='RASID AI Surveillance Platform';
   const backItem = {
     name: 'Back',
     icon: `back.png`,

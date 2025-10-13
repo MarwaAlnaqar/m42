@@ -62,7 +62,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
       {/* Page title */}
       <div className="content-container">
         <div >
-          <h3 className="page_Title">Asterisk</h3>
+          <h3 className="page_Title">Asterisk AI</h3>
           {/* <h3 className='page_subtitle'>(Central Testing Lab AI)</h3> */}
         </div>
 

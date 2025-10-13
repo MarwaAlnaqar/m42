@@ -1,18 +1,20 @@
+
+
+
+
 import React, { useState } from 'react';
 import '../style.css';
 import OptionBox from '../../Components/OptionBox';
-import ImageBg from'../../Components/ImageBg';
+import VideoBackground from '../../Components/VideoBackground';
 import IframePopup from '../../Components/IframePopup';
 import { useNavigate } from 'react-router-dom';
-const CtlAiPage18 = () => {
+const Global18 = () => {
   const [popupData, setPopupData] = useState(null);
  const navigate = useNavigate();
-
- 
+ const pageTitle='Global Pollinator Monitoring Platform';
   const backItem = {
     name: 'Back',
     icon: `back.png`,
-    isBack:true,
     redirectPageName: ''
   };
 
@@ -21,96 +23,91 @@ const CtlAiPage18 = () => {
     icon: `close.png`,
     redirectPageName: ''
   };
-const bgLink=`${import.meta.env.BASE_URL}assets/m42/ctl_aiBg.svg`;
-  const buttonItemList = [
+
+  const RasidsItemList = [
     {
       name: 'Video',
       type: 'video',
       icon: `video.png`,
-      link: 'https://player.vimeo.com/video/1126669318?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0'
+
+      link:"https://player.vimeo.com/video/1126097322?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&controls=0"
+
     },
     {
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://uat-platform.centraltestinglab.ae/home'
+      link: 'https://johanjohnthomas.github.io/PollinatorsMap/'
     },
-       {
+    {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-  link: 'ctl_Info.svg'
+      link: 'Pollinator_Info.jpg'
     }
   ];
-
+const bgLink=`${import.meta.env.BASE_URL}assets/m42/global_bg.svg`;
   const handleOpenPopup = (item) => {
     console.log('Clicked item:', item);
     setPopupData(item);
   };
 
   return (
-    // <VideoBackground className="RasidsPage-container country-container">
-      <ImageBg className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
-      
-       <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
-      <div>
- {/* Logo */}
-      <div className="logo flex-center">
-       <img  src={`${import.meta.env.BASE_URL}assets/m42/logo182.svg`} alt="logo" />
-      </div>
-
-      {/* Page title */}
-      <div className="content-container">
+    <VideoBackground className="RasidsPage-container country-container" isVideo={false} bgFullLink={bgLink} >
+      <div style={{display:'flex',justifyContent:'space-between',flexDirection:'column'}}>
         <div >
-          <h3 className="page_Title">CTL AI</h3>
-          <h3 className='page_subtitle'>(Central Testing Lab AI)</h3>
-        </div>
-
-        {/* Buttons */}
-        <div className="box-container">
-          {buttonItemList.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => handleOpenPopup(item)}
-              className="button-option"
-            >
-              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${item.icon}`} alt={item.name} />
-              <div className="button-title">{item.name}</div>
+            {/* Logo */}
+            <div className="logo flex-center">
+            <img  src={`${import.meta.env.BASE_URL}assets/m42/logo.svg`} alt="logo" />
             </div>
-          ))}
+
+            {/* Page title */}
+            <div className="content-container">
+              <div className="page_Title">
+              <h3>{pageTitle}</h3>
+              </div>
+
+              {/* Buttons */}
+              <div className="box-container">
+                {RasidsItemList.map((item, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleOpenPopup(item)}
+                    className="button-option"
+                  >
+                    <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${item.icon}`} alt={item.name} />
+                    <div className="button-title">{item.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+        </div>
+        {/* Back button */}
+        <div className="back-button">
+          {/* <OptionBox option={backItem} IsBack={true} /> */}
+          <div
+              
+                onClick={() => navigate(-1)}
+                className="button-option"
+              >
+                <div className="button-title">{backItem.name}</div>
+                <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${backItem.icon}`} alt={backItem.name} />
+              </div>
         </div>
       </div>
-      </div>
-      {/* Back button */}
-      <div className="back-button">
-        {/* <OptionBox option={backItem} IsBack={true} /> */}
-        <div
-            
-              onClick={() => navigate(-1)}
-              className="button-option"
-            >
-              <div className="button-title">{backItem.name}</div>
-              <img className="button_icon" src={`${import.meta.env.BASE_URL}assets/m42/${backItem.icon}`} alt={backItem.name} />
-            </div>
-      </div>
-
-
-     </div>
-
-    
       {/* Popup */}
-      {popupData && (
-        <div className="popup-overlay">
-          <IframePopup
-            show={true}
-            onClose={() => setPopupData(null)}
-            data={popupData} // ✅ correct prop
-          />
-      
-        </div>
-      )}
-    </ImageBg>
+     {popupData && (
+             <div className="popup-overlay">
+               <IframePopup
+                 show={true}
+                 onClose={() => setPopupData(null)}
+                 data={popupData} // ✅ correct prop
+               />
+           
+             </div>
+           )}
+    </VideoBackground>
   );
 };
 
-export default CtlAiPage18;
+export default Global18;
