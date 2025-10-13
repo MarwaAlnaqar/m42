@@ -24,13 +24,13 @@ const CtlAiPage6 = () => {
   };
 
   const buttonItemList = [
-    // {
-    //   name: 'Video',
-    //   type: 'video',
-    //   icon: `video.png`,
-    //   link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
-    // },
-    
+    {
+      name: 'Video',
+      type: 'video',
+      icon: `video.png`,
+      link: 'https://player.vimeo.com/video/1126669318?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0'
+    },
+
     {
       name: 'Web Demo',
       type: 'webDemo',
@@ -41,7 +41,7 @@ const CtlAiPage6 = () => {
       name: 'More Info',
       type: 'info',
       icon: `info.png`,
-  link: 'ctl_Info.svg'
+      link: 'ctl_Info.svg'
     }
   ];
 
