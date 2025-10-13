@@ -32,14 +32,14 @@ const RasidsPage6 = () => {
       
       // link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
       // link: 'https://vimeo.com/1126090398?fl=pl&fe=sh'
-            link:"https://player.vimeo.com/video/1126090398?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&title=0&byline=0&portrait=0&controls=0"
+            link:"https://player.vimeo.com/video/1126743438?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&byline=0&portrait=0&controls=0"
 
     },
     {
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://dev-wastewateranalytics.envosense.ai/RASID/home'
+      link: 'https://dev-wastewateranalytics.envosense.ai/RASID-gitex/login'
     },
     {
       name: 'More Info',

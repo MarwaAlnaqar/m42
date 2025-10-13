@@ -35,7 +35,7 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
       name: 'Web Demo',
       type: 'webDemo',
       icon: `web_demo.png`,
-      link: 'https://dev-wastewateranalytics.envosense.ai/RASID/home'
+      link: 'https://dev-wastewateranalytics.envosense.ai/RASID-gitex/login'
     },
     {
       name: 'More Info',
