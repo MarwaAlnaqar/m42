@@ -16,7 +16,7 @@ export default function IframePopup({ show, onClose, data }) {
 <iframe
    src={data.link}
   referrerPolicy="strict-origin-when-cross-origin"
-  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
   style={{ width: '100%', aspectRatio: '16/9', border: 'none' }}
   title="video"
 />

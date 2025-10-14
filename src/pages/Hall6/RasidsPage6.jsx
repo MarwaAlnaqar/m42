@@ -32,7 +32,7 @@ const RasidsPage6 = () => {
       
       // link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
       // link: 'https://vimeo.com/1126090398?fl=pl&fe=sh'
-            link:"https://player.vimeo.com/video/1126743438?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&byline=0&portrait=0&controls=0"
+            link:"https://player.vimeo.com/video/1127073481?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
 
     },
     {

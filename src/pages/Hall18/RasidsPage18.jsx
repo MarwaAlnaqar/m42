@@ -29,7 +29,8 @@ const bgLink=`${import.meta.env.BASE_URL}assets/m42/rasids6.svg`;
       name: 'Video',
       type: 'video',
       icon: `video.png`,
-      link: 'https://player.castr.com/live_8005c6e07e4911f0b36595c94a84f69d'
+         link:"https://player.vimeo.com/video/1127073481?autoplay=1&loop=1&muted=1&background=1&title=0&byline=0&portrait=0"
+
     },
     {
       name: 'Web Demo',
